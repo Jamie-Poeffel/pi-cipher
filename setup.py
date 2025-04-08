@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pi_cipher',
-    version='1.0.0',
+    version='2.0.0',
     packages=find_packages(),
     install_requires=[],
     entry_points={
@@ -10,7 +10,15 @@ setup(
             'pi-cipher=cli:main',
         ],
     },
-    author='Dein Name',
-    description='Verschlüsselungstool basierend auf Pi mit Dummy-Daten und Redundanz',
+    author='Jamie Poeffel',
+    description='Pi Cipher v2.0 - Quantum Ready Kryptotool',
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     license='MIT',
+    url='https://github.com/Jamie-Poeffel/pi_cipher',
+    classifiers=[
+        'Programming Language :: Python :: 2',
+        'License :: OSI Approved :: MIT License',
+    ],
+    python_requires='>=3.6',
 )

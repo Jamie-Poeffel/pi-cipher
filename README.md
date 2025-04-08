@@ -1,13 +1,19 @@
-# Pi Cipher
+# Pi Cipher v2.0
 
-Verschlüsselungstool basierend auf den Nachkommastellen von Pi, inklusive Dummy-Daten, Redundanz und Base64-Kodierung.
+<p align="center">
+  <img src="logo.svg" width="200" alt="Pi Cipher Logo">
+</p>
+
+Quantum Ready Verschlüsselungstool mit Dummy-Daten, Redundanz, kryptosicherer Zufall und Integritätsprüfung.
 
 ## Features
 
-- Dummy-Daten zur Tarnung
-- Redundante Speicherung für Fehlertoleranz
-- Saubere Base64-Ausgabe
-- Python Library und Command-Line Tool
+- Quantum-Safe Startoffset (128 Bit)
+- Kombinierte mathematische Konstanten (Pi, e, Phi)
+- Zufällige Gruppenreihenfolge & Dummy-Padding
+- Redundanz + Fehlerkorrektur
+- Optionaler Integritätscheck
+- Open Source & PyPI ready
 
 ## Installation
 
@@ -15,3 +21,29 @@ Verschlüsselungstool basierend auf den Nachkommastellen von Pi, inklusive Dummy
 git clone https://github.com/dein-user/pi_cipher.git
 cd pi_cipher
 pip install .
+```
+
+## Nutzung
+
+### CLI
+
+```bash
+pi-cipher encrypt "HELLO WORLD"
+pi-cipher decrypt "deine_verschlüsselte_nachricht"
+```
+
+### Als Python Library
+
+```python
+from pi_cipher import encrypt, decrypt
+
+encrypted = encrypt("HELLO WORLD")
+print(encrypted)
+
+decrypted = decrypt(encrypted)
+print(decrypted)
+```
+
+## Lizenz
+
+MIT License
